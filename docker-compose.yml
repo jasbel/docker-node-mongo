@@ -9,8 +9,14 @@ services:
       - "5000:3000"
     links:
       - mongo
+    # volumes me este util para sincronizacion de mi docker y mi local
+    volumes:
+      - .:/usr/src/app
   mongo:
     container_name: mymongodatabase
     image: mongo
     ports:
       - "27018:27017"
+    logging:
+      # disabled of logs mongod
+      driver: none
