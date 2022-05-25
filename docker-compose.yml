@@ -9,7 +9,6 @@ services:
       - "5000:3000"
     links:
       - mongo
-    # volumes me este util para sincronizacion de mi docker y mi local
     volumes:
       - .:/usr/src/app
   mongo:

@@ -1,5 +1,5 @@
-# seleccionar node version 14
-FROM node:14
+# seleccionar node version 16
+FROM node:16
 
 # -p si la carpeta no existe que lo cree
 RUN mkdir -p /usr/src/app
